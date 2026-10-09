@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alight Motion — 1 Month Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="brand">
+      <div class="brand-mark">🎬</div>
+      <div class="brand-text">
+        <strong>Alight Motion</strong>
+        <span>Premium Activation</span>
+      </div>
+    </header>
+
+    <div class="pill">📦 1 Month Premium</div>
+
+    <h1>Activate 1 Month Premium</h1>
+    <p class="lead">
+      Enter your account email. We'll send a secure magic link to verify ownership
+      and activate your <b>1 Month Premium</b>.
+    </p>
+
+    <!-- STEP 1: EMAIL -->
+    <form id="stepEmail" class="step">
+      <label class="field">
+        <span>Email address</span>
+        <input type="email" id="email" placeholder="you@example.com" required autocomplete="email">
+      </label>
+      <button type="submit" class="btn">Send Magic Link</button>
+      <p class="hint">We never ask for your password.</p>
+    </form>
+
+    <!-- STEP 2: MAGIC LINK -->
+    <form id="stepLink" class="step hidden">
+      <label class="field">
+        <span>Magic link / code</span>
+        <textarea id="magic" rows="3" placeholder="Paste the magic link or the code from your email…" required></textarea>
+      </label>
+      <button type="submit" class="btn">Verify &amp; Activate</button>
+      <button type="button" class="btn ghost" id="backBtn">Use a different email</button>
+    </form>
+
+    <!-- PROGRESS -->
+    <div id="progress" class="step hidden">
+      <div class="bar"><div class="fill"></div></div>
+      <p id="status" class="status">Connecting…</p>
+    </div>
+
+    <!-- SUCCESS -->
+    <div id="success" class="step hidden">
+      <div class="check">✅</div>
+      <h2>1 Month Premium Activated</h2>
+      <p class="lead">Reopen Alight Motion to unlock your Premium features.</p>
+    </div>
+
+    <footer class="foot">
+      <span>🔒 Secure activation</span>
+      <span>•</span>
+      <span>1 Month plan</span>
+    </footer>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
